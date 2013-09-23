@@ -1,1 +1,0 @@
-/Users/Nisarg/Documents/programs/opencv/snooker/build/CMakeFiles/test.dir
