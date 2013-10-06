@@ -8,7 +8,7 @@ using namespace cv;
 
 
 class ballDetect{
-public:
+private:
     //max number of objects to be detected in frame
     static const int MAX_NUM_OBJECTS = 50;
     //minimum and maximum object area
