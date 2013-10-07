@@ -24,7 +24,7 @@ ballDetect :: ballDetect(){
     //brown
     minval[6] = Scalar(17,155,165);
     //green
-    minval[7] = Scalar(67,238,112);
+    minval[7] = Scalar(67,161,90);
     
     //maximum threshold values
     //red
@@ -42,7 +42,7 @@ ballDetect :: ballDetect(){
     //brown
     maxval[6] = Scalar(26,255,255);
     //green
-    maxval[7] = Scalar(82,255,223);
+    maxval[7] = Scalar(85,255,214);
 }
 
 string ballDetect :: intToString(int number){
@@ -144,7 +144,7 @@ void ballDetect :: initDetect(char *videoInput){
 		capture.read(src);
 		//convert frame from BGR to HSV colorspace
 		cvtColor(src,src_HSV,COLOR_BGR2HSV);
-        for(int i=0;i<7;++i)
+        for(int i=0;i<8;++i)
 		{
 			inRange(src_HSV,minval[i],maxval[i],processed);
             morphOps(processed);
@@ -161,6 +161,7 @@ void ballDetect :: initDetect(char *videoInput){
                 }
             }
             imshow("source",src);
+            
         }
         waitKey(5);
 	}

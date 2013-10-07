@@ -12,7 +12,7 @@ private:
     //max number of objects to be detected in frame
     static const int MAX_NUM_OBJECTS = 50;
     //minimum and maximum object area
-    static const int MIN_OBJECT_AREA = 5*5;
+    static const int MIN_OBJECT_AREA = 10*10;
     static const int MAX_OBJECT_AREA = 20 * 20;
     //FRAME_HEIGHT*FRAME_WIDTH/1.5;
     //default capture width and height
