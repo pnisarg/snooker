@@ -1,4 +1,3 @@
-
 Requirements:
 --------------
 • GCC 4.4.x or later. This can be installed with:
@@ -18,10 +17,10 @@ Requirements:
 
 Usage
 -----
-$ mkdir build
-$ cd build
-$ cmake ..
-$ make
-$ ./snooker table.png
+- $ mkdir build
+- $ cd build
+- $ cmake ..
+- $ make
+- $ ./snooker video.mp4
 
 It will create snooker executable
